@@ -1,0 +1,32 @@
+# 依存関係
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Next.js
+.next
+out
+
+# 開発環境
+.env*.local
+.env.development
+.env.test
+
+# テスト
+coverage
+.nyc_output
+
+# その他
+.git
+.gitignore
+README.md
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

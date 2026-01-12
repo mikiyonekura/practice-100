@@ -1,0 +1,9 @@
+services:
+  next:
+    image: ${NODE_IMAGE:-node:20-alpine}
+    working_dir: /usr/src
+    volumes:
+      - ${HOST_DIR:-./src}:/usr/src
+    command: npm run dev
+    ports:
+      - "${HOST_PORT:-3000}:3000"

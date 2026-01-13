@@ -5,11 +5,11 @@ FROM node:20-alpine
 WORKDIR /app
 
 # 依存関係ファイルだけ先にコピーしてインストール
-COPY package*.json ./
+COPY src/package*.json ./
 RUN npm install
 
 # アプリのソースコードをコピー
-COPY . .
+COPY src/ .
 
 # 開発サーバーを起動
 CMD ["npm", "run", "dev"]
